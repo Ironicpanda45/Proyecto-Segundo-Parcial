@@ -1,33 +1,72 @@
-import {ConvertirJSONaObjeto} from "./ayudas.js"
-import {crearElementoVista} from "./crud.js"
-import {ConvertirObjetoaJSON} from "./ayudas.js"
+import { ConvertirJSONaObjeto } from "./ayudas.js";
+import { crearElementoVista } from "./controladorVista.js";
 import { Videojuego } from "./definiciones.js";
-import { GestorVideojuegos} from "./Gestor.js";
+import { GestorVideojuegos } from "./GestorVideojuegos.js";
 
-/*let Videojuegos = [
-    new Videojuego(1, 'Minecraft', 'Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).[19]​[20]​ Está programado en el lenguaje de programación Java[21]​ para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition.[22]​ Fue lanzado el 17 de mayo de 2009, y después de numerosos cambios, su primera versión estable «1.0» fue publicada el 18 de noviembre de 2011.'),
-    new Videojuego(2, 'The Legend of Zelda: Breath of the Wild', 'Un juego de acción-aventura de mundo abierto desarrollado y publicado por Nintendo. Es la decimonovena entrega principal de la serie The Legend of Zelda.'),
-    new Videojuego(3, 'Grand Theft Auto V', 'Un videojuego de acción-aventura de mundo abierto desarrollado por Rockstar North y publicado por Rockstar Games.'),
-    new Videojuego(4, 'Red Dead Redemption 2', 'Una precuela de Red Dead Redemption, ambientada en 1899. El jugador controla a Arthur Morgan, un forajido y miembro de la banda de Van der Linde.'),
-    new Videojuego(5, 'The Witcher 3: Wild Hunt', 'Un videojuego de rol de acción desarrollado por CD Projekt Red, basado en la serie de novelas de fantasía de Andrzej Sapkowski.'),
-    new Videojuego(6, 'Super Mario Odyssey', 'Un juego de plataformas en 3D desarrollado y publicado por Nintendo para Nintendo Switch. Es la decimonovena entrega de la serie Super Mario.'),
-    new Videojuego(7, 'Elden Ring', 'Un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. Creado en colaboración con el novelista de fantasía George R. R. Martin.'),
-    new Videojuego(8, 'Horizon Zero Dawn', 'Un videojuego de rol de acción post-apocalíptico desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment.'),
-    new Videojuego(9, 'God of War (2018)', 'Un videojuego de acción-aventura desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Es la octava entrega de la serie God of War.'),
-    new Videojuego(10, 'Animal Crossing: New Horizons', 'Un videojuego de simulación de vida desarrollado y publicado por Nintendo. Es la quinta entrega principal de la serie Animal Crossing.')
-];
-*/
+
+//Crea una instancia del gestor de datos.
 const gestorVideojuegos = new GestorVideojuegos();
-gestorVideojuegos.CargarListaVideojuegos(await ConvertirJSONaObjeto("json/Videojuegos.json"));
-gestorVideojuegos.ObtenerVideojuegoPorID(3);
-gestorVideojuegos.ActualizarDatosVideojuego(7, new Videojuego(7, "Ejemplo", "lorem"));
-gestorVideojuegos.AgregarNuevoVideojuego(new Videojuego(11, "mario", "mario ejemplo"));
-gestorVideojuegos.ObtenerListaVideojuegos();
-gestorVideojuegos. EliminarVideojuego(3);
-gestorVideojuegos.ObtenerListaVideojuegos();
-function CrearListaVideojuegos(){
-    gestorVideojuegos.listaVideojuego.forEach(elemento =>{
-        crearElementoVista(elemento.id, elemento.titulo, elemento.descripcion)
-    })
+//Referencia al formulario HTML para agregar juegos.
+const formulario = document.querySelector("#formulario-agregar");
+//Referencia al botón de enviar el formulario.
+const botonAgregar = document.querySelector("#boton-agregar");
+
+
+//funcion: inicializarAplicacion()
+//descripcion: Carga los datos iniciales y arranca la aplicación. Sirve para preparar la lista de juegos al inicio.
+async function inicializarAplicacion() {
+    try {
+        // Carga el arreglo de juegos desde el archivo JSON.
+        const datosIniciales = await ConvertirJSONaObjeto("json/Videojuegos.json");
+        gestorVideojuegos.CargarListaVideojuegos(datosIniciales);
+
+        VistaListaInicial();
+        conectarFormulario();
+
+    } catch (error) {
+        console.log("Error al inicializar la aplicación o cargar datos:", error);
+    }
 }
-CrearListaVideojuegos();
+
+//funcion: VistaListaInicial()
+//descripcion: Crea los elementos visuales para todos los juegos de la lista. Sirve para dibujar la lista inicial de juegos en el HTML.
+function VistaListaInicial() {
+    // Lista completa de videojuegos.
+    const lista = gestorVideojuegos.obtenerLista();
+    lista.forEach(elemento => {
+        crearElementoVista(elemento.id, elemento.titulo, elemento.descripcion, elemento.plataforma, gestorVideojuegos);
+    });
+}
+
+//funcion: conectarFormulario()
+//descripcion: Configura el evento para agregar un juego con el botón del formulario. Sirve para capturar los datos del formulario y añadir un juego nuevo a la lista y a la vista.
+function conectarFormulario() {
+    if (botonAgregar) {
+        botonAgregar.addEventListener("click", (e) => {
+            e.preventDefault();
+            // Objeto con los datos del formulario.
+            const datos_formulario = new FormData(formulario);
+            // Convierte los datos del formulario a un objeto simple.
+            const datos = Object.fromEntries(datos_formulario.entries());
+
+            if (datos.titulo && datos.descripcion && datos.plataforma) {
+                // Nuevo objeto Videojuego con los datos capturados.
+                const nuevoVideojuego = new Videojuego(null, datos.titulo, datos.descripcion, datos.plataforma);
+
+                // Resultado de agregar el juego al gestor.
+                const juegoAgregado = gestorVideojuegos.agregar(nuevoVideojuego);
+
+                if (juegoAgregado) {
+                    crearElementoVista(juegoAgregado.id, juegoAgregado.titulo, juegoAgregado.descripcion, juegoAgregado.plataforma, gestorVideojuegos);
+                    formulario.reset();
+                    document.querySelector(".AlertaVacio").style.display = "none";
+                }
+            } else {
+                document.querySelector(".AlertaVacio").style.display = "block";
+            }
+        });
+    }
+}
+
+//Ejecuta la aplicacion
+inicializarAplicacion();

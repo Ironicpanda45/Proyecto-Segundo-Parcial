@@ -9,27 +9,42 @@
 </head>
 
 <body>
-    <svg width="300" height="300" viewBox="0 0 200 200">
-        <defs>
-            <path id="circlePath" d="M 100 100 m -75 0 a 75 75 0 1 1 150 0 a 75 75 0 1 1 -150 0"></path>
-        </defs>
-        <text>
-            <textPath xlink:href="#circlePath">
-                Lista de juegos por jugar
-            </textPath>
-        </text>
-    </svg>
+    <div class="contenedor-titulo-svg">
+        <svg viewBox="0 0 250 180">
+            <defs>
+                <path id="circlePath" d="M 125 90 m -70 0 a 70 70 0 1 1 140 0 a 70 70 0 1 1 -140 0"></path>
+            </defs>
+            <text class="titulo-svg-texto">
+                <textPath xlink:href="#circlePath">
+                    Lista de juegos por jugar
+                </textPath>
+            </text>
+        </svg>
+
+        <div class="imagen-central-neubrutalista">
+            <img src="recursos/psController.png" alt="Icono de mando de videojuego">
+        </div>
+    </div>
     <div class="contenedor-formulario-agregar">
         <form id="formulario-agregar">
-            <div class="AlertaVacio">Ingrese los datos</div>
-            <div>
-                <input type="text" placeholder="Titulo" name="titulo">
+            <div class="AlertaVacio">
+                Por favor, rellena todos los campos.
             </div>
-            <div>
-                <input type="text" placeholder="Descripcion" name="descripcion">
-            </div>
+            <input type="text" id="titulo" name="titulo" placeholder="Título del Videojuego" required>
+
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" required>
+
+            <label for="plataforma" style="margin-top: 10px; font-weight: 700;">Plataforma:</label>
+            <select id="plataforma" name="plataforma" required>
+                <option value="PC">PC</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Nintendo Switch">Nintendo Switch</option>
+                <option value="Móvil">Móvil</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <button id="boton-agregar">Agregar Juego</button>
         </form>
-        <button id="boton-agregar" onclick="">Agregar</button>
     </div>
     <div class="contenedor-elementos-juegos" id="contenedor-elementos-juegos">
     </div>

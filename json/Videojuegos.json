@@ -2,101 +2,121 @@
   {
     "id": 1,
     "titulo": "Minecraft",
-    "descripcion": "Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).[19]​[20]​ Está programado en el lenguaje de programación Java[21]​ para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition.[22]​ Fue lanzado el 17 de mayo de 2009, y después de numerosos cambios, su primera versión estable «1.0» fue publicada el 18 de noviembre de 2011."
+    "descripcion": "Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).[19]​[20]​ Está programado en el lenguaje de programación Java[21]​ para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition.[22]​ Fue lanzado el 17 de mayo de 2009, y después de numerosos cambios, su primera versión estable «1.0» fue publicada el 18 de noviembre de 2011.",
+    "plataforma": "PC"
   },
   {
     "id": 2,
     "titulo": "The Legend of Zelda: Breath of the Wild",
-    "descripcion": "Un juego de acción-aventura de mundo abierto desarrollado y publicado por Nintendo. Es la decimonovena entrega principal de la serie The Legend of Zelda."
+    "descripcion": "Un juego de acción-aventura de mundo abierto desarrollado y publicado por Nintendo. Es la decimonovena entrega principal de la serie The Legend of Zelda.",
+    "plataforma": "Nintendo Switch"
   },
   {
     "id": 3,
     "titulo": "Grand Theft Auto V",
-    "descripcion": "Un videojuego de acción-aventura de mundo abierto desarrollado por Rockstar North y publicado por Rockstar Games."
+    "descripcion": "Un videojuego de acción-aventura de mundo abierto desarrollado por Rockstar North y publicado por Rockstar Games.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 4,
     "titulo": "Red Dead Redemption 2",
-    "descripcion": "Una precuela de Red Dead Redemption, ambientada en 1899. El jugador controla a Arthur Morgan, un forajido y miembro de la banda de Van der Linde."
+    "descripcion": "Una precuela de Red Dead Redemption, ambientada en 1899. El jugador controla a Arthur Morgan, un forajido y miembro de la banda de Van der Linde.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 5,
     "titulo": "The Witcher 3: Wild Hunt",
-    "descripcion": "Un videojuego de rol de acción desarrollado por CD Projekt Red, basado en la serie de novelas de fantasía de Andrzej Sapkowski."
+    "descripcion": "Un videojuego de rol de acción desarrollado por CD Projekt Red, basado en la serie de novelas de fantasía de Andrzej Sapkowski.",
+    "plataforma": "PC"
   },
   {
     "id": 6,
     "titulo": "Super Mario Odyssey",
-    "descripcion": "Un juego de plataformas en 3D desarrollado y publicado por Nintendo para Nintendo Switch. Es la decimonovena entrega de la serie Super Mario."
+    "descripcion": "Un juego de plataformas en 3D desarrollado y publicado por Nintendo para Nintendo Switch. Es la decimonovena entrega de la serie Super Mario.",
+    "plataforma": "Nintendo Switch"
   },
   {
     "id": 7,
     "titulo": "Elden Ring",
-    "descripcion": "Un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. Creado en colaboración con el novelista de fantasía George R. R. Martin."
+    "descripcion": "Un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. Creado en colaboración con el novelista de fantasía George R. R. Martin.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 8,
     "titulo": "Horizon Zero Dawn",
-    "descripcion": "Un videojuego de rol de acción post-apocalíptico desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment."
+    "descripcion": "Un videojuego de rol de acción post-apocalíptico desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 9,
     "titulo": "God of War (2018)",
-    "descripcion": "Un videojuego de acción-aventura desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Es la octava entrega de la serie God of War."
+    "descripcion": "Un videojuego de acción-aventura desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Es la octava entrega de la serie God of War.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 10,
     "titulo": "Animal Crossing: New Horizons",
-    "descripcion": "Un videojuego de simulación de vida desarrollado y publicado por Nintendo. Es la quinta entrega principal de la serie Animal Crossing."
+    "descripcion": "Un videojuego de simulación de vida desarrollado y publicado por Nintendo. Es la quinta entrega principal de la serie Animal Crossing.",
+    "plataforma": "Nintendo Switch"
   },
   {
     "id": 11,
     "titulo": "Cyberpunk 2077",
-    "descripcion": "Un videojuego de rol de acción ambientado en un futuro distópico, desarrollado y publicado por CD Projekt Red."
+    "descripcion": "Un videojuego de rol de acción ambientado en un futuro distópico, desarrollado y publicado por CD Projekt Red.",
+    "plataforma": "PC"
   },
   {
     "id": 12,
     "titulo": "Call of Duty: Modern Warfare (2019)",
-    "descripcion": "Un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision. Es un reinicio de la sub-serie Modern Warfare."
+    "descripcion": "Un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision. Es un reinicio de la sub-serie Modern Warfare.",
+    "plataforma": "Xbox"
   },
   {
     "id": 13,
     "titulo": "Doom Eternal",
-    "descripcion": "Un videojuego de disparos en primera persona desarrollado por id Software y publicado por Bethesda Softworks. Es la secuela de Doom (2016)."
+    "descripcion": "Un videojuego de disparos en primera persona desarrollado por id Software y publicado por Bethesda Softworks. Es la secuela de Doom (2016).",
+    "plataforma": "PC"
   },
   {
     "id": 14,
     "titulo": "Persona 5",
-    "descripcion": "Un videojuego de rol desarrollado por Atlus. Cronológicamente, es la sexta entrega de la serie Persona."
+    "descripcion": "Un videojuego de rol desarrollado por Atlus. Cronológicamente, es la sexta entrega de la serie Persona.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 15,
     "titulo": "Pokémon Espada y Escudo",
-    "descripcion": "Videojuegos de rol desarrollados por Game Freak y publicados por Nintendo para Nintendo Switch. Son las primeras entregas de la octava generación de Pokémon."
+    "descripcion": "Videojuegos de rol desarrollados por Game Freak y publicados por Nintendo para Nintendo Switch. Son las primeras entregas de la octava generación de Pokémon.",
+    "plataforma": "Nintendo Switch"
   },
   {
     "id": 16,
     "titulo": "Final Fantasy VII Remake",
-    "descripcion": "Un videojuego de rol de acción desarrollado y publicado por Square Enix. Es una nueva versión del juego de 1997, con un enfoque en la ciudad de Midgar."
+    "descripcion": "Un videojuego de rol de acción desarrollado y publicado por Square Enix. Es una nueva versión del juego de 1997, con un enfoque en la ciudad de Midgar.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 17,
     "titulo": "Resident Evil 2 (Remake)",
-    "descripcion": "Un videojuego de terror de supervivencia desarrollado y publicado por Capcom. Es una nueva versión del juego original de 1998."
+    "descripcion": "Un videojuego de terror de supervivencia desarrollado y publicado por Capcom. Es una nueva versión del juego original de 1998.",
+    "plataforma": "Xbox"
   },
   {
     "id": 18,
     "titulo": "Hades",
-    "descripcion": "Un videojuego de rol de acción roguelike desarrollado y publicado por Supergiant Games. El jugador controla a Zagreus, hijo de Hades."
+    "descripcion": "Un videojuego de rol de acción roguelike desarrollado y publicado por Supergiant Games. El jugador controla a Zagreus, hijo de Hades.",
+    "plataforma": "PC"
   },
   {
     "id": 19,
     "titulo": "Death Stranding",
-    "descripcion": "Un videojuego de acción desarrollado por Kojima Productions y publicado por Sony Interactive Entertainment. Fue dirigido por Hideo Kojima."
+    "descripcion": "Un videojuego de acción desarrollado por Kojima Productions y publicado por Sony Interactive Entertainment. Fue dirigido por Hideo Kojima.",
+    "plataforma": "PlayStation"
   },
   {
     "id": 20,
     "titulo": "Overwatch 2",
-    "descripcion": "Un videojuego de disparos de héroes por equipos gratuito desarrollado y publicado por Blizzard Entertainment. Es la secuela de Overwatch (2016)."
+    "descripcion": "Un videojuego de disparos de héroes por equipos gratuito desarrollado y publicado por Blizzard Entertainment. Es la secuela de Overwatch (2016).",
+    "plataforma": "PC"
   }
 ]
