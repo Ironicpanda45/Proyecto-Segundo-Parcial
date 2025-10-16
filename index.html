@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <svg width="300" height="300" viewBox="0 0 200 200">
+        <defs>
+            <path id="circlePath" d="M 100 100 m -75 0 a 75 75 0 1 1 150 0 a 75 75 0 1 1 -150 0"></path>
+        </defs>
+        <text>
+            <textPath xlink:href="#circlePath">
+                Lista de juegos por jugar
+            </textPath>
+        </text>
+    </svg>
+    <div class="contenedor-formulario-agregar">
+        <form id="formulario-agregar">
+            <div class="AlertaVacio">Ingrese los datos</div>
+            <div>
+                <input type="text" placeholder="Titulo" name="titulo">
+            </div>
+            <div>
+                <input type="text" placeholder="Descripcion" name="descripcion">
+            </div>
+        </form>
+        <button id="boton-agregar" onclick="">Agregar</button>
+    </div>
+    <div class="contenedor-elementos-juegos" id="contenedor-elementos-juegos">
+    </div>
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>

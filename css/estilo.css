@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    font-size: 16px;
+}
+
+svg text {
+    font-family: inherit;
+    font-size: 1rem;
+    fill: #333333;
+}
+
+.contenedor-formulario-agregar,
+.contenedor-elementos-juegos {
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#formulario-agregar {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+}
+
+.elemento-lista-juegos {
+    background-color: #ffffff;
+    padding: 20px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.elemento-lista-juegos h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.elemento-lista-juegos p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0;
+}
+
+.contenedor-botones-accion {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#formulario-agregar input {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+#formulario-agregar input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+#boton-agregar,
+.boton-editar,
+.boton_eliminar {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.boton-editar,
+.boton_eliminar {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    min-width: 0;
+}
+
+#boton-agregar {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+    min-width: 120px;
+}
+#boton-agregar:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.boton-editar {
+    background-color: #ffffff;
+    color: #333333;
+    border-color: #cccccc;
+}
+.boton-editar:hover {
+    background-color: #f0f0f0;
+    border-color: #adadad;
+}
+
+.boton_eliminar {
+    background-color: #ffffff;
+    color: #dc3545;
+    border-color: #dc3545;
+}
+.boton_eliminar:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+    border-color: #dc3545;
+}
+.AlertaVacio {
+    display: none;
+    padding: 16px;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 6px;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+.id_numero{
+    background-color: #cfcfcf;
+    border-radius: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "titulo": "Minecraft",
+    "descripcion": "Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).[19]​[20]​ Está programado en el lenguaje de programación Java[21]​ para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition.[22]​ Fue lanzado el 17 de mayo de 2009, y después de numerosos cambios, su primera versión estable «1.0» fue publicada el 18 de noviembre de 2011."
+  },
+  {
+    "id": 2,
+    "titulo": "The Legend of Zelda: Breath of the Wild",
+    "descripcion": "Un juego de acción-aventura de mundo abierto desarrollado y publicado por Nintendo. Es la decimonovena entrega principal de la serie The Legend of Zelda."
+  },
+  {
+    "id": 3,
+    "titulo": "Grand Theft Auto V",
+    "descripcion": "Un videojuego de acción-aventura de mundo abierto desarrollado por Rockstar North y publicado por Rockstar Games."
+  },
+  {
+    "id": 4,
+    "titulo": "Red Dead Redemption 2",
+    "descripcion": "Una precuela de Red Dead Redemption, ambientada en 1899. El jugador controla a Arthur Morgan, un forajido y miembro de la banda de Van der Linde."
+  },
+  {
+    "id": 5,
+    "titulo": "The Witcher 3: Wild Hunt",
+    "descripcion": "Un videojuego de rol de acción desarrollado por CD Projekt Red, basado en la serie de novelas de fantasía de Andrzej Sapkowski."
+  },
+  {
+    "id": 6,
+    "titulo": "Super Mario Odyssey",
+    "descripcion": "Un juego de plataformas en 3D desarrollado y publicado por Nintendo para Nintendo Switch. Es la decimonovena entrega de la serie Super Mario."
+  },
+  {
+    "id": 7,
+    "titulo": "Elden Ring",
+    "descripcion": "Un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. Creado en colaboración con el novelista de fantasía George R. R. Martin."
+  },
+  {
+    "id": 8,
+    "titulo": "Horizon Zero Dawn",
+    "descripcion": "Un videojuego de rol de acción post-apocalíptico desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment."
+  },
+  {
+    "id": 9,
+    "titulo": "God of War (2018)",
+    "descripcion": "Un videojuego de acción-aventura desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Es la octava entrega de la serie God of War."
+  },
+  {
+    "id": 10,
+    "titulo": "Animal Crossing: New Horizons",
+    "descripcion": "Un videojuego de simulación de vida desarrollado y publicado por Nintendo. Es la quinta entrega principal de la serie Animal Crossing."
+  },
+  {
+    "id": 11,
+    "titulo": "Cyberpunk 2077",
+    "descripcion": "Un videojuego de rol de acción ambientado en un futuro distópico, desarrollado y publicado por CD Projekt Red."
+  },
+  {
+    "id": 12,
+    "titulo": "Call of Duty: Modern Warfare (2019)",
+    "descripcion": "Un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision. Es un reinicio de la sub-serie Modern Warfare."
+  },
+  {
+    "id": 13,
+    "titulo": "Doom Eternal",
+    "descripcion": "Un videojuego de disparos en primera persona desarrollado por id Software y publicado por Bethesda Softworks. Es la secuela de Doom (2016)."
+  },
+  {
+    "id": 14,
+    "titulo": "Persona 5",
+    "descripcion": "Un videojuego de rol desarrollado por Atlus. Cronológicamente, es la sexta entrega de la serie Persona."
+  },
+  {
+    "id": 15,
+    "titulo": "Pokémon Espada y Escudo",
+    "descripcion": "Videojuegos de rol desarrollados por Game Freak y publicados por Nintendo para Nintendo Switch. Son las primeras entregas de la octava generación de Pokémon."
+  },
+  {
+    "id": 16,
+    "titulo": "Final Fantasy VII Remake",
+    "descripcion": "Un videojuego de rol de acción desarrollado y publicado por Square Enix. Es una nueva versión del juego de 1997, con un enfoque en la ciudad de Midgar."
+  },
+  {
+    "id": 17,
+    "titulo": "Resident Evil 2 (Remake)",
+    "descripcion": "Un videojuego de terror de supervivencia desarrollado y publicado por Capcom. Es una nueva versión del juego original de 1998."
+  },
+  {
+    "id": 18,
+    "titulo": "Hades",
+    "descripcion": "Un videojuego de rol de acción roguelike desarrollado y publicado por Supergiant Games. El jugador controla a Zagreus, hijo de Hades."
+  },
+  {
+    "id": 19,
+    "titulo": "Death Stranding",
+    "descripcion": "Un videojuego de acción desarrollado por Kojima Productions y publicado por Sony Interactive Entertainment. Fue dirigido por Hideo Kojima."
+  },
+  {
+    "id": 20,
+    "titulo": "Overwatch 2",
+    "descripcion": "Un videojuego de disparos de héroes por equipos gratuito desarrollado y publicado por Blizzard Entertainment. Es la secuela de Overwatch (2016)."
+  }
+]
